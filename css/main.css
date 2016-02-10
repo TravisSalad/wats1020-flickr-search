@@ -2,29 +2,47 @@
    Author's custom styles
    ========================================================================== */
 
-/* Enable these styles if you wish to go into a grid layout.
+/*Enable these styles if you wish to go into a grid layout.*/
 ul#images li {
-    width: 120px;
-    height: auto;
     display: inline-block;
-    position: relative;
-    float: left;
+    text-align: center;
+}
+
+body {
+  background: #F7F7F9;
+}
+
+.form-inline {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.new-li {
+  height: 350px;
+  display: inline-block;
+  position: relative;
+  float: left;
+  text-align: center;
+  overflow: auto;
+  margin: 15px 0 15px 0;
 }
 
 ul#images li img {
     display: inline-block;
-    width: 100%;
-    height: auto;
+    max-height: 300px;
+    width: auto;
 }
 
 ul#images li button {
     display: inline-block;
 }
 
---- End of grid layout styles. */
+/*-- End of grid layout styles.*/
 
 ul#images {
     list-style-type: none;
+    padding-left: 0px;
 }
 
 ul#images .placeholder {
@@ -42,16 +60,3 @@ ul#images .placeholder {
 hr {
     clear:both;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

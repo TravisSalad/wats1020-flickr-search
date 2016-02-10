@@ -49,17 +49,21 @@
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container-fluid">
       <h1 class="search-title">Flickr Search</h1>
-      <ul id="images">
+      <ul class="row-fluid" id="images">
         <!-- TODO: Replace the content in this area with a grid of images based on the results of the search. -->
-        <li class="placeholder">Search for images using the search bar above!</li>
       </ul>
-
+      <form class="navbar-form form-inline" role="form">
+        <div class="form-group">
+          <input type="text" placeholder="Type keywords here." class="form-control" name="searchText">
+          <button type="submit" class="btn btn-primary search" name="searchButton">Search</button>
+        </div>
+      </form>
       <hr>
 
       <footer>
-        <p>&copy; Jane Student 2015</p>
+        <p>&copy; Travis Salad 2016</p>
       </footer>
     </div> <!-- /container -->
 
@@ -72,7 +76,7 @@
             <h4 class="modal-title" id="infoModalLabel">Loading...</h4>
           </div>
           <div class="modal-body">
-            Loading...
+          Loading...
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
