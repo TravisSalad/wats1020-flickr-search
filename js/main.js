@@ -29,7 +29,6 @@ var searchImages = function(tags){
         var dateTaken = $('<p class="date-taken">').text(item.date_taken).appendTo(newListItem);
         var author = $('<p class="author">').html(item.author).appendTo(newListItem);
 
-
           newListItem.appendTo("#images");
 
       if( i === 15 ){
@@ -38,8 +37,6 @@ var searchImages = function(tags){
     });
   });
 };
-
-
 
 
     // Inside the `searchImages()` function, the following things should happen:
@@ -64,7 +61,9 @@ var searchImages = function(tags){
       event.preventDefault();
       var searchTextInput = $(event.target.parentElement).find('input[name="searchText"]')[0];
       searchImages(searchTextInput.value);
+      $('.back-top').show();
     });
+
 
         // When the Search button is clicked, the following should happen:
         //

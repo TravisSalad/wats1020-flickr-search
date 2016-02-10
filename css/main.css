@@ -12,6 +12,12 @@ body {
   background: #F7F7F9;
 }
 
+
+
+.back-top {
+  display: none;
+}
+
 .form-inline {
   width: 300px;
   margin-left: auto;
