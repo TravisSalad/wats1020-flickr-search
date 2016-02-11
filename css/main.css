@@ -39,6 +39,11 @@ ul#images li img {
     display: inline-block;
     max-height: 300px;
     width: auto;
+    transition: all .2s ease-in-out;
+}
+
+ul#images li img:hover {
+  transform: scale(1.5);
 }
 
 ul#images li button {
